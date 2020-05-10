@@ -1,0 +1,84 @@
+@import '~antd/dist/antd.css';
+
+@font-face {
+  font-family: 'webfont';
+  font-display: swap;
+  src: url('//at.alicdn.com/t/webfont_nsu2saidygr.eot');
+  /* IE9*/
+  src: url('//at.alicdn.com/t/webfont_nsu2saidygr.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('//at.alicdn.com/t/webfont_nsu2saidygr.woff2') format('woff2'),
+    url('//at.alicdn.com/t/webfont_nsu2saidygr.woff') format('woff'),
+    /* chrome、firefox */
+    url('//at.alicdn.com/t/webfont_nsu2saidygr.ttf') format('truetype'),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('//at.alicdn.com/t/webfont_nsu2saidygr.svg#杨任东竹石体-Bold') format('svg');
+  /* iOS 4.1- */
+}
+
+.web-font {
+  font-family: "webfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  text-align: center;
+  font-size: 36px;
+}
+* {
+  -webkit-user-select: none;
+  -moz-user-select:none;
+  -o-user-select:none;
+  -ms-user-select:none;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+
+  .flex-item {
+    padding: 50px;
+    padding-top: 15px;
+    color: #fff;
+    border-radius: 10px;
+    background-color: rgb(101, 221, 221);
+  }
+}
+
+.list-item {
+  padding: 15px 0;
+  margin: 0 0 4px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+
+  input {
+    border: 0 none;
+  }
+}
+
+.text-small {
+    font-size: 18px;
+    text-align: left;
+    line-height: 14px;
+}
+
+@for $i from 1 through 100 {
+  .pd-#{$i} { padding: $i * 1px; }
+  .pdl-#{$i} { padding-left: $i * 1px; }
+  .pdr-#{$i} { padding-right: $i * 1px; }
+  .pdt-#{$i} { padding-top: $i * 1px; }
+  .pdb-#{$i} { padding-bottom: $i * 1px; }
+  .mr-#{$i} { margin: $i * 1px; }
+  .mrl-#{$i} { margin-left: $i * 1px; }
+  .mrr-#{$i} { margin-right: $i * 1px; }
+  .mrt-#{$i} { margin-top: $i * 1px; }
+  .mrb-#{$i} { margin-bottom: $i * 1px; }
+}
+
+@for $size from 10 through 100 {
+  .fs-#{$size} { font-size: $size * 1px; }
+}
